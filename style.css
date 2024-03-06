@@ -1,0 +1,111 @@
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.card{
+    background: white;
+    width: 250px;
+    height: 350px;
+    position: relative;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%,-50%);
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.card:hover #save-btn{
+    opacity: 1;
+    top: 10px;
+}
+#save-btn{
+     position: absolute;
+     top: -40px;
+     right: 10px;
+     opacity: 0;
+     background: red;
+     color: white;
+     border-radius: 20px;
+     padding: 15px 20px;
+     transition: all 300ms linear;
+     z-index: 1;
+     font-weight: bold;
+     border: none;
+}
+
+.overlay{
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: black;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    border-radius: 20px;
+}
+
+.card:hover .overlay{
+    display: block;
+}
+
+.card:hover #bottom-btn{
+    opacity: 1;
+    bottom: 10px;
+}
+
+#bottom-btn{
+    position: absolute;
+    bottom: -40px;
+    left: 25px;
+    opacity: 0;
+    transition: all 300ms linear;
+    z-index: 1; 
+    width: 100%; 
+    height: 35px;
+}
+
+#idealink{
+  width: 50%;
+  font-weight: bold;
+  border-radius: 50px;
+  border: none;
+  background-color: rgb(244, 241, 241);
+  padding: 10px 12px;
+  height: 100%;
+}
+
+span{
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 70%;
+    vertical-align: middle;
+}
+
+.rotate{
+   transform: rotate(-45deg);
+}
+
+#up-arrow{
+    display: inline-block;
+    font-weight: bold;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(244, 241, 241);
+    padding: 10px 12px;
+    height: 100%;
+}
+
+#dots{
+    display: inline-block;
+    border-radius: 50%;
+    font-weight: bold;
+    border: none;
+    background-color: rgb(244, 241, 241);
+    padding: 10px 12px;
+    height: 100%;
+}
